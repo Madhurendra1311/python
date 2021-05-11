@@ -7,3 +7,4 @@ class Car():
         self.__enginetype = enginetype
 
 audi = Car(4,4,"Diesel")
+print(audi.__windows)
