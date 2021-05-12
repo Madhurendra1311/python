@@ -97,6 +97,22 @@ class LinkedList:
         for data in data_list:
             self.insert_at_end(data)
 
+    def reverseList(list):
+        # initialize variables
+        previous = None         # `previous` initially points to None
+        current = list.head     # `current` points at the first element
+        following = current.next    # `following` points at the second element
+
+        # go till the last element of the list
+        while current:
+            current.next = previous # reverse the link
+            previous = current      # move `previous` one step ahead
+            current = following         # move `current` one step ahead
+            if following:               # if this was not the last element
+                following = following.next    # move `following` one step ahead
+
+        list.head = previous
+
 
 if __name__ == '__main__':
     ll = LinkedList()
@@ -105,6 +121,7 @@ if __name__ == '__main__':
     ll.insert_values(["banana","mango","grapes","orange"])
     ll.insert_at(1,"tomato")
     ll.insert_at(2,"jackFruit")
+    ll.reverseList()
     # ll.remove_at(2)
     # ll.print()
 
