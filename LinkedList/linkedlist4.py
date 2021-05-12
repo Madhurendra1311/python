@@ -114,13 +114,31 @@ class LinkedList:
             self.head.next = Node(data_to_insert,self.head.next)
             return
         # Now insert data_to_insert after data_after node
-        itr = self.head
-        while itr:
-            if itr.data == data_after:
-                itr.next = Node(data_to_insert, itr.next)
+        iteration = self.head
+        while iteration:
+            if iteration.data == data_after:
+                iteration.next = Node(data_to_insert, iteration.next)
                 break
 
-            itr = itr.next
+            iteration = iteration.next
+
+# # 0)
+#     def insert_before_value(self, data_before, data_to_insert):
+#         # Search for first occurance of data_after value in linked list
+#         if self.head is None:
+#             return
+
+#         if self.head.data==data_before:
+#             return self.insert_at_begining(data_to_insert)
+#         # Now insert data_to_insert before data_after node
+#         iteration = self.head
+#         while iteration:
+#             if iteration.data == data_before:
+#                 iteration.next = data_to_insert
+#                 data_to_insert.next = Node(data_to_insert, iteration.next)
+#                 return
+
+#             iteration = Node(data_to_insert, iteration.next)
 
 # 9)
     def remove_by_value(self, data):
@@ -132,12 +150,12 @@ class LinkedList:
             self.head = self.head.next
             return
 
-        itr = self.head
-        while itr.next:
-            if itr.next.data == data:
-                itr.next = itr.next.next
+        iteration = self.head
+        while iteration.next:
+            if iteration.next.data == data:
+                iteration.next = iteration.next.next
                 break
-            itr = itr.next
+            iteration = iteration.next
 
 # 10)
     def reverseList(list):
@@ -156,6 +174,18 @@ class LinkedList:
 
         list.head = previous
 
+# 11)
+    def replace(self, old_item, new_item):
+        # Replace the given old_item in this linked list with given new_item
+        if old_item == new_item:
+            return
+        iteration = self.head
+        while iteration is not None:
+            if iteration.data == old_item:
+                iteration.data = new_item
+                return
+            iteration = iteration.next
+        raise ValueError('Item not found: {}')
 
 
 if __name__ == '__main__':
@@ -165,8 +195,9 @@ if __name__ == '__main__':
     ll.insert_values(["banana","mango","grapes","orange"])
     ll.insert_at(1,"tomato")
     ll.insert_at(2,"jackFruit")
-    ll.insert_after_value("mango","apple")
-    ll.remove_by_value("orange")
+    # ll.insert_after_value("mango","apple")
+    # ll.insert_before_value("mango","aam")
+    # ll.remove_by_value("orange")
     # ll.reverseList()
     # ll.remove_at(2)
     # ll.print()
@@ -174,4 +205,5 @@ if __name__ == '__main__':
     # ll.insert_values([45,7,12,567,99])
     # ll.insert_at_end(75)
     print(ll.get_length())
+    ll.replace('mango', 'aam')
     ll.print()
