@@ -25,6 +25,14 @@ class Stack:
         temp.next = None
         return temp.data
 
+    def len(self):
+        count = 0
+        iteration = self.top
+        while iteration:
+            count += 1
+            iteration=iteration.next
+        return count
+
     # function returns the value on the top of the stack.
     def peek(self):
         return self.top.data
@@ -54,6 +62,7 @@ if __name__ == "__main__":
     stack.push(10)
     stack.push(40)
     stack.push(50)
+    print(stack.len())
     stack.peek()
     stack.display()
     stack.pop()
