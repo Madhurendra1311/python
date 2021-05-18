@@ -22,7 +22,7 @@ class DoublyLinkedList:
             cur.next = new_node
             new_node.prev = cur
             new_node.next = None
-    # prepend the append
+    # prepend the element
     # def prepend(self, data):
     #     if self.head is None:
     #         new_node = Node(data)
