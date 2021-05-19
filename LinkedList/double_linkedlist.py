@@ -66,13 +66,13 @@ class DoublyLinkedList:
         cur = self.head
         while cur:
             if cur.data == key and cur == self.head:
-                # Case 1:
+                # Case 1: if only one node is there
                 if not cur.next:
                     cur = None 
                     self.head = None
                     return
 
-                # Case 2:
+                # Case 2: delete the first node from the list
                 else:
                     nxt = cur.next
                     cur.next = None 
@@ -82,7 +82,7 @@ class DoublyLinkedList:
                     return 
 
             elif cur.data == key:
-                # Case 3:
+                # Case 3: delete the node in between the list
                 if cur.next:
                     nxt = cur.next 
                     prev = cur.prev
@@ -93,7 +93,7 @@ class DoublyLinkedList:
                     cur = None
                     return
 
-                # Case 4:
+                # Case 4: delete the last node from the list
                 else:
                     prev = cur.prev 
                     prev.next = None 
@@ -144,7 +144,7 @@ class DoublyLinkedList:
     #sortList() will sort the given list in ascending order  
     def sortList(self):  
         #Check whether list is empty  
-        if(self.head == None):  
+        if self.head is None:  
             return
         else:  
             #Current will point to head  
