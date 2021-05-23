@@ -158,10 +158,10 @@ class LinkedList:
             iteration = iteration.next
 
 # 10)
-    def reverseList(list):
+    def reverseList(self):
         # initialize variables
         previous = None         # `previous` initially points to None
-        current = list.head     # `current` points at the first element
+        current = self.head     # `current` points at the first element
         following = current.next    # `following` points at the second element
 
         # go till the last element of the list
@@ -172,7 +172,7 @@ class LinkedList:
             if following:               # if this was not the last element
                 following = following.next    # move `following` one step ahead
 
-        list.head = previous
+        self.head = previous
 
 # 11)
     def replace(self, old_item, new_item):

@@ -27,8 +27,16 @@ class Queue:
             self.rear = None
             return
         self.front.prev = None
-
         return temp
+
+    def len(self):
+        count = 0
+        iteration = self.front
+        while iteration:
+            count += 1
+            iteration=iteration.next
+        return count
+
     # clear the whole queue
     def clearqueue(self):
         self.front = self.rear = None
@@ -53,6 +61,7 @@ if __name__ == "__main__":
     queue.enqueue(20)
     queue.enqueue(30)
     queue.display()
+    print(queue.len())
     queue.dequeue()
     queue.dequeue()
     queue.dequeue()
