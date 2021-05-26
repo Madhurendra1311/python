@@ -122,24 +122,6 @@ class LinkedList:
 
             iteration = iteration.next
 
-# # 0)
-#     def insert_before_value(self, data_before, data_to_insert):
-#         # Search for first occurance of data_after value in linked list
-#         if self.head is None:
-#             return
-
-#         if self.head.data==data_before:
-#             return self.insert_at_begining(data_to_insert)
-#         # Now insert data_to_insert before data_after node
-#         iteration = self.head
-#         while iteration:
-#             if iteration.data == data_before:
-#                 iteration.next = data_to_insert
-#                 data_to_insert.next = Node(data_to_insert, iteration.next)
-#                 return
-
-#             iteration = Node(data_to_insert, iteration.next)
-
 # 9)
     def remove_by_value(self, data):
         # Remove first node that contains data

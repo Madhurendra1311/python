@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE details SYSTEM "DetailsType.dtd">
+
+<details>
+    <detail id="a1" lang="javascript">
+        <name>Madhurendra</name>
+        <salary>1000</salary>
+    </detail>
+
+    <detail id="a2" lang="python">
+        <name>Ankit</name>
+        <salary>2000</salary>
+    </detail>
+</details>
+
+
+
+<!-- #Grammer
+# 1) structure - DTD - Document type definition
+# 2) Content - Schema -->

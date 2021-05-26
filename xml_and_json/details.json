@@ -1,0 +1,12 @@
+[
+    {
+        "name": "Madhurendra",
+        "salary": 1000,
+        "rating": 5
+    },
+    {
+        "name": "Ankit",
+        "salary": 2000,
+        "rating": 4.9
+    }
+]
