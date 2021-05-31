@@ -1,3 +1,6 @@
+# The process of wrapping up variables and methods into a single entity is known as Encapsulation. It is one of the underlying concepts in object-oriented programming (OOP). It acts as a protective shield that puts restrictions on accessing variables and methods directly, and can prevent accidental or unauthorized modification of data.
+
+
 class Car:
     def __init__(self, speed, color):
         self.speed = speed

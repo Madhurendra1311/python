@@ -1,8 +1,7 @@
 import json
 # importing json module
 
-class student_table:       # user table class
-    
+class student_table:       # user table class    
     def create_student(self):
         # create user method
         student_id = int(input("Enter student id to create: "))                   # taking student id input
@@ -30,7 +29,6 @@ class student_table:       # user table class
 
         print("User successfully added")                                    # print the message
 
-    # create_user()
 
     def get_student(self):
         # get all user info
@@ -41,7 +39,6 @@ class student_table:       # user table class
         json_obj = json.loads(file_line)                                    # then load to print all the data
         print(json_obj)
 
-    # get_users()
 
     def update_student(self):
         student_id = int(input("Enter student id to update: "))                   # taking inputss from users
@@ -68,7 +65,6 @@ class student_table:       # user table class
 
         print("User updated successfully")                                  # printing successful message
         
-    # update_user()
 
     def delete_student(self):                                                  
         # delete user method
@@ -88,10 +84,9 @@ class student_table:       # user table class
 
         print("User deleted successfully")                                  # printing the message
 
-    # delete_user()
         
 user1 = student_table()
-# user1.create_student()
+user1.create_student()
 # user1.get_student()
 # user1.update_student()
-user1.delete_student()
+# user1.delete_student()
