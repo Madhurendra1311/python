@@ -13,8 +13,6 @@ def partition(array, low, high):
     array[left+1], array[high] = array[high], array[left+1]
     return left+1
 
-
-
 def quickSort(array, low, high):
     if len(array) == 1:
         return array

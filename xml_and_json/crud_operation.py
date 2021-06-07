@@ -1,7 +1,7 @@
 import json
 # importing json module
 
-class student_table:       # user table class    
+class student_table:       # user table class   
     def create_student(self):
         # create user method
         student_id = int(input("Enter student id to create: "))                   # taking student id input
@@ -84,9 +84,12 @@ class student_table:       # user table class
 
         print("User deleted successfully")                                  # printing the message
 
-        
-user1 = student_table()
-user1.create_student()
-# user1.get_student()
-# user1.update_student()
-# user1.delete_student()
+
+
+if __name__ == '__main__':       
+    user1 = student_table()
+    # user1.create_student()
+    # user1.get_student()
+    # user1.update_student()
+    # user1.delete_student()
+    user1.condition_1()

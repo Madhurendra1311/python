@@ -11,7 +11,7 @@ honda = Car(250, 'blue')
 audi = Car(300, 'black')
 
 #changing ford speed
-ford.speed = 200
+ford.speed = 250
 
 print(ford.speed)
 print(ford.color)
