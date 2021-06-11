@@ -17,4 +17,4 @@ print("Result matrix is")
 for i in range(N):
     for j in range(M):
         print(B[i][j], "", end='')
-    print()  
+    print() 
