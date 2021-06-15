@@ -1,0 +1,21 @@
+.container{
+    background-color: rosybrown;
+}
+
+.main-container{
+    background-color: rgb(119, 54, 54);
+}
+
+input {
+    background-color: whitesmoke;
+    width: 200px;
+    height: 30px;
+    margin-left: 400px;
+}
+
+#get{
+    width: 70px;
+    height: 35px;
+    color: tomato;
+    background-color:rgb(red, green, blue)
+}
