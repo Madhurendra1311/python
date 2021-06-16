@@ -1,8 +1,13 @@
+.container{
+    background-color: lightcoral;
+}
 .main-container{
     margin-left: 150px;
+    background-color: indianred;
 }
 .node-list{
     margin-top:10px;
+    margin-left: 150px;
 }
 .node{
     display:inline-block;
