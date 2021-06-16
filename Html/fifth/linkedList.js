@@ -156,8 +156,6 @@ class LinkedList {
 }
 
 
-
-
 const li = new LinkedList();
 li.insertLast(200);
 li.insertFirst(100);
