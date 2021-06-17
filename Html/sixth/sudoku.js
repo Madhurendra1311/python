@@ -160,7 +160,6 @@ function valid(k, l, r1) {
     var l2 = l1 + 3;
     for (i = k1; i < k2; i++) {
         for (j = l1; j < l2; j++) {
-
             if (sudokuboard[i][j] == r1)
                 return 0;
         }
