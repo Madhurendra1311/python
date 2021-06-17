@@ -39,12 +39,15 @@
 .js-submit{
     height: 35px;
     width: 150px;
+    background-color: lightgray;
 }
 .js-remove{
     height: 35px;
     width: 150px;
+    background-color: linen;
 }
 .js-find{
     height: 35px;
     width: 150px;
+    background-color: oldlace;
 }
